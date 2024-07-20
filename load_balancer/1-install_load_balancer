@@ -16,8 +16,8 @@ frontend fiston-frontend
         default_backend fiston-backend
 backend fiston-backend
         balance roundrobin
-        server 6238-web-01 54.196.216.8:80 check
-        server 6238-web-02 98.80.15.59:80 check
+        server 6245-web-01 18.207.118.157:80 check
+        server 6245-web-02 18.208.245.133:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
